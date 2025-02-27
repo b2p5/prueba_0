@@ -195,13 +195,15 @@ function initBookingCalendar() {
                 center: 'title',
                 right: 'dayGridMonth,timeGridWeek'
             },
+            locale: 'es',
+            firstDay: 1, // Start week on Monday
             selectable: true,
             selectMirror: true,
             dayMaxEvents: true,
             businessHours: {
                 daysOfWeek: [1, 2, 3, 4, 5, 6], // Monday - Saturday
                 startTime: '10:00',
-                endTime: '20:00',
+                endTime: '21:00',
             },
             select: function(info) {
                 // Update booking form date
