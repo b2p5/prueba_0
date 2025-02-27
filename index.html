@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spa de uñas y masajes - Relájate y renuévate con nuestros servicios premium de manicura, pedicura y masajes terapéuticos.">
+    <meta name="keywords" content="spa, uñas, masajes, manicura, pedicura, belleza, relajación">
+    <title>Serenity Spa | Uñas & Masajes</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo" id="logo">Serenity Spa</div>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#booking" class="nav-link">Reservas</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonios</a></li>
+                    <li><a href="#location" class="nav-link">Ubicación</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                    <div class="hero-content">
+                        <h1 class="parallax-title">Bienvenido a Serenity Spa</h1>
+                        <p class="parallax-subtitle">Un oasis de relajación para tus sentidos</p>
+                        <a href="#booking" class="cta-button pulse">Reserva Ahora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1632345031435-8727f6897d53?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                    <div class="hero-content">
+                        <h1 class="parallax-title">Arte en tus Manos</h1>
+                        <p class="parallax-subtitle">Manicura profesional con los mejores productos</p>
+                        <a href="#booking" class="cta-button pulse">Reserva Ahora</a>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="background-image: url('https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');">
+                    <div class="hero-content">
+                        <h1 class="parallax-title">Masajes Terapéuticos</h1>
+                        <p class="parallax-subtitle">Libera tensiones y renueva tu energía</p>
+                        <a href="#booking" class="cta-button pulse">Reserva Ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title reveal-element">Nuestros Servicios</h2>
+            <div class="service-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-category="all">Todos</button>
+                    <button class="tab-btn" data-category="nails">Uñas</button>
+                    <button class="tab-btn" data-category="massage">Masajes</button>
+                    <button class="tab-btn" data-category="facial">Faciales</button>
+                </div>
+                <div class="service-cards">
+                    <!-- Nail Services -->
+                    <div class="service-card reveal-element" data-category="nails">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Uñas Esculpidas">
+                                <h3>Uñas Esculpidas</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Uñas Esculpidas</h3>
+                                <p>Técnica profesional para crear uñas perfectas con acrílico o gel.</p>
+                                <p class="price">Desde 35€</p>
+                                <a href="#booking" class="card-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-element" data-category="nails">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Manicura Spa">
+                                <h3>Manicura Spa</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Manicura Spa</h3>
+                                <p>Tratamiento completo con exfoliación, masaje y esmalte premium.</p>
+                                <p class="price">Desde 25€</p>
+                                <a href="#booking" class="card-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-element" data-category="nails">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Pedicura Deluxe">
+                                <h3>Pedicura Deluxe</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Pedicura Deluxe</h3>
+                                <p>Cuidado completo para pies con baño de parafina y masaje relajante.</p>
+                                <p class="price">Desde 30€</p>
+                                <a href="#booking" class="card-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Massage Services -->
+                    <div class="service-card reveal-element" data-category="massage">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Masaje Relajante">
+                                <h3>Masaje Relajante</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Masaje Relajante</h3>
+                                <p>Técnica suave para aliviar el estrés y mejorar la circulación.</p>
+                                <p class="price">Desde 45€</p>
+                                <a href="#booking" class="card-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card reveal-element" data-category="massage">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Masaje Deportivo">
+                                <h3>Masaje Deportivo</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Masaje Deportivo</h3>
+                                <p>Enfocado en aliviar tensiones musculares y mejorar el rendimiento físico.</p>
+                                <p class="price">Desde 50€</p>
+                                <a href="#booking" class="card-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Facial Services -->
+                    <div class="service-card reveal-element" data-category="facial">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Facial Hidratante">
+                                <h3>Facial Hidratante</h3>
+                            </div>
+                            <div class="card-back">
+                                <h3>Facial Hidratante</h3>
+                                <p>Tratamiento para revitalizar la piel y aportar luminosidad.</p>
+                                <p class="price">Desde 40€</p>
+                                <a href="#booking" class="card-btn">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 class="section-title reveal-element">Reserva tu Cita</h2>
+            <div class="booking-container">
+                <div class="calendar-container reveal-element">
+                    <div id="booking-calendar"></div>
+                </div>
+                <div class="booking-form-container reveal-element">
+                    <form id="booking-form" class="booking-form">
+                        <div class="form-group">
+                            <label for="service-select">Selecciona un servicio</label>
+                            <select id="service-select" required>
+                                <option value="">-- Seleccionar servicio --</option>
+                                <optgroup label="Uñas">
+                                    <option value="unas-esculpidas" data-price="35">Uñas Esculpidas (35€)</option>
+                                    <option value="manicura-spa" data-price="25">Manicura Spa (25€)</option>
+                                    <option value="pedicura-deluxe" data-price="30">Pedicura Deluxe (30€)</option>
+                                </optgroup>
+                                <optgroup label="Masajes">
+                                    <option value="masaje-relajante" data-price="45">Masaje Relajante (45€)</option>
+                                    <option value="masaje-deportivo" data-price="50">Masaje Deportivo (50€)</option>
+                                </optgroup>
+                                <optgroup label="Faciales">
+                                    <option value="facial-hidratante" data-price="40">Facial Hidratante (40€)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-date">Fecha</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time">Hora</label>
+                            <select id="booking-time" required>
+                                <option value="">-- Seleccionar hora --</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-name">Nombre completo</label>
+                            <input type="text" id="booking-name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-email">Email</label>
+                            <input type="email" id="booking-email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-phone">Teléfono</label>
+                            <input type="tel" id="booking-phone" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-notes">Notas adicionales</label>
+                            <textarea id="booking-notes"></textarea>
+                        </div>
+                        <div class="booking-summary">
+                            <h3>Resumen de reserva</h3>
+                            <p>Servicio: <span id="summary-service">-</span></p>
+                            <p>Fecha: <span id="summary-date">-</span></p>
+                            <p>Hora: <span id="summary-time">-</span></p>
+                            <p>Precio: <span id="summary-price">-</span></p>
+                        </div>
+                        <button type="submit" class="submit-btn">Confirmar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal-element">Lo que dicen nuestros clientes</h2>
+            <div class="swiper testimonials-swiper reveal-element">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">"La mejor experiencia de spa que he tenido. El masaje relajante fue increíble y el personal muy profesional. Volveré pronto."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="María García" class="author-img">
+                                <div class="author-info">
+                                    <h4>María García</h4>
+                                    <p>Cliente habitual</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">"Mis uñas nunca habían lucido tan bien. La manicurista fue muy detallista y el resultado superó mis expectativas. Totalmente recomendable."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Laura Martínez" class="author-img">
+                                <div class="author-info">
+                                    <h4>Laura Martínez</h4>
+                                    <p>Cliente nueva</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <p class="testimonial-text">"El ambiente es muy relajante y el servicio excelente. La pedicura deluxe es mi favorita, deja los pies como nuevos."</p>
+                            <div class="testimonial-author">
+                                <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Ana Rodríguez" class="author-img">
+                                <div class="author-info">
+                                    <h4>Ana Rodríguez</h4>
+                                    <p>Cliente habitual</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location">
+        <div class="container">
+            <h2 class="section-title reveal-element">Nuestra Ubicación</h2>
+            <div class="location-container">
+                <div class="map-container reveal-element">
+                    <div id="map"></div>
+                    <button id="find-me" class="location-btn">Encontrar ubicación cercana</button>
+                </div>
+                <div class="location-info reveal-element">
+                    <h3>Serenity Spa</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Gran Vía 28, Madrid</p>
+                    <p><i class="fas fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fas fa-clock"></i> Lunes a Sábado: 10:00 - 20:00</p>
+                    <p><i class="fas fa-clock"></i> Domingo: Cerrado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal-element">Contacto</h2>
+            <div class="contact-container">
+                <form id="contact-form" class="contact-form reveal-element">
+                    <div class="form-group">
+                        <label for="contact-name">Nombre</label>
+                        <input type="text" id="contact-name" required>
+                        <span class="error-message" id="contact-name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" required>
+                        <span class="error-message" id="contact-email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Asunto</label>
+                        <input type="text" id="contact-subject" required>
+                        <span class="error-message" id="contact-subject-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Mensaje</label>
+                        <textarea id="contact-message" required></textarea>
+                        <span class="error-message" id="contact-message-error"></span>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                </form>
+                <div class="contact-info reveal-element">
+                    <h3>Información de Contacto</h3>
+                    <p><i class="fas fa-envelope"></i> info@serenityspa.com</p>
+                    <p><i class="fas fa-phone"></i> +34 912 345 678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Gran Vía 28, Madrid</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Serenity Spa</h3>
+                    <p>Tu oasis de belleza y relajación</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#booking">Reservas</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#location">Ubicación</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#services">Uñas Esculpidas</a></li>
+                        <li><a href="#services">Manicura Spa</a></li>
+                        <li><a href="#services">Pedicura Deluxe</a></li>
+                        <li><a href="#services">Masaje Relajante</a></li>
+                        <li><a href="#services">Masaje Deportivo</a></li>
+                        <li><a href="#services">Facial Hidratante</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbete a nuestra newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Serenity Spa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <div class="toast-message">Mensaje enviado correctamente</div>
+        </div>
+        <div class="toast-progress"></div>
+    </div>
+    
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Swiper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- FullCalendar -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+    
+    <!-- Google Maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
+    
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
