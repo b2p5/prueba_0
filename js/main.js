@@ -193,7 +193,10 @@ function initBookingCalendar() {
             headerToolbar: {
                 left: 'prev,next today',
                 center: 'title',
-                right: 'dayGridMonth,timeGridWeek'
+                right: '' // Remove view buttons
+            },
+            buttonText: {
+                today: 'Hoy'
             },
             locale: 'es',
             firstDay: 1, // Start week on Monday
