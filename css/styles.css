@@ -141,7 +141,7 @@ label {
 
 .header.scrolled {
     background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
     transform: translateY(0);
 }
 
@@ -150,11 +150,13 @@ label {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    transition: padding 0.3s ease;
+    height: 80px;
+    transition: padding 0.3s ease, height 0.3s ease;
 }
 
 .header.scrolled .container {
-    padding: 10px 15px;
+    padding: 5px 15px;
+    height: 56px; /* Reduced by approximately 30% from 80px */
 }
 
 .logo-container {
