@@ -405,7 +405,7 @@ function initGoogleMap() {
         // This function will be called by the Google Maps API callback
         window.initMap = function() {
             // Madrid coordinates
-            const spaLocation = { lat: 40.4168, lng: -3.7038 };
+            const spaLocation = { lat: 40.42113293235297, lng: -3.7093665610964157 };
             
             // Create map
             const map = new google.maps.Map(mapElement, {
