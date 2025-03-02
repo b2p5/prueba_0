@@ -539,7 +539,7 @@ function initGoogleMap() {
             const contentString = `
                 <div class="map-info-window">
                     <h3>Serenity Spa</h3>
-                    <p>Calle Gran Vía 28, Madrid</p>
+                    <p>Calle Leganitos 2, Madrid</p>
                     <p>Tel: +34 912 345 678</p>
                 </div>
             `;
