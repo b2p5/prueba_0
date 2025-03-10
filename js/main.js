@@ -554,75 +554,7 @@ function initGoogleMap() {
                 infoWindow.open(map, marker);
             });
             
-            // Find user location button
-            const findMeButton = document.getElementById('find-me');
-            
-            if (findMeButton) {
-                findMeButton.addEventListener('click', function() {
-                    if (navigator.geolocation) {
-                        findMeButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Localizando...';
-                        
-                        navigator.geolocation.getCurrentPosition(
-                            function(position) {
-                                const userLocation = {
-                                    lat: position.coords.latitude,
-                                    lng: position.coords.longitude
-                                };
-                                
-                                // Add user marker
-                                new google.maps.Marker({
-                                    position: userLocation,
-                                    map: map,
-                                    icon: {
-                                        path: google.maps.SymbolPath.CIRCLE,
-                                        scale: 10,
-                                        fillColor: '#4285F4',
-                                        fillOpacity: 1,
-                                        strokeColor: '#FFFFFF',
-                                        strokeWeight: 2
-                                    }
-                                });
-                                
-                                // Calculate route
-                                const directionsService = new google.maps.DirectionsService();
-                                const directionsRenderer = new google.maps.DirectionsRenderer({
-                                    map: map,
-                                    suppressMarkers: true
-                                });
-                                
-                                directionsService.route(
-                                    {
-                                        origin: userLocation,
-                                        destination: spaLocation,
-                                        travelMode: google.maps.TravelMode.DRIVING
-                                    },
-                                    function(response, status) {
-                                        if (status === 'OK') {
-                                            directionsRenderer.setDirections(response);
-                                            
-                                            // Show distance and duration
-                                            const route = response.routes[0];
-                                            const leg = route.legs[0];
-                                            
-                                            showToast(`Distancia: ${leg.distance.text}, Tiempo estimado: ${leg.duration.text}`);
-                                        } else {
-                                            showToast('No se pudo calcular la ruta');
-                                        }
-                                    }
-                                );
-                                
-                                findMeButton.innerHTML = 'Encontrar ubicación cercana';
-                            },
-                            function() {
-                                showToast('No se pudo obtener tu ubicación');
-                                findMeButton.innerHTML = 'Encontrar ubicación cercana';
-                            }
-                        );
-                    } else {
-                        showToast('Tu navegador no soporta geolocalización');
-                    }
-                });
-            }
+            // Location functionality removed
         };
     }
 }
