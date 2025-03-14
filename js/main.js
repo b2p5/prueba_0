@@ -532,13 +532,13 @@ function initGoogleMap() {
                 map: map,
                 icon: markerIcon,
                 animation: google.maps.Animation.DROP,
-                title: 'AYA Belleza'
+                title: 'AYA Estética'
             });
             
             // Info window content
             const contentString = `
                 <div class="map-info-window">
-                    <h3>AYA Belleza</h3>
+                    <h3>AYA Estética</h3>
                     <p>Calle Leganitos 2, Madrid</p>
                     <p>Tel: +34 912 345 678</p>
                 </div>
